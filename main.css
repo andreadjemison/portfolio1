@@ -1,0 +1,431 @@
+body{
+background: black;
+}
+
+/* ================STICKY SIDEBAR=============== */
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 20vw;
+    padding: 5px 40px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 40px;
+    position: sticky;
+    top: 0;
+    /* margin-left: 50px; */
+}
+.menu{
+    /* margin-left: 50px; */
+    margin-top: 40px;
+    width: 20vw;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+#mininav{
+    margin-left: 40px;
+}
+
+/* .sticky{
+    display: contents;
+} */
+.me {
+    height: 170px;
+    width: 150px;
+    border-radius: 50%;
+    border-image: round 60px white;
+}
+.sidebar h2{
+    font-family: 'Oleo Script', cursive;
+    color: white;
+    text-shadow: gray 5px 5px 9px;
+    text-align: center;
+    font-size: 2em;
+}
+.sidebar a{
+    text-decoration: none;
+    color: white;
+    text-emphasis: none;
+}
+.sidebar ul{
+    font-family: 'Oleo Script', cursive;
+    font-size: 1.7em;
+    margin: 15px 0px; 
+    text-align: center;
+    border-top: ridge;
+    border-bottom: ridge;
+    border-radius: 50px;
+    text-shadow: gray 5px 5px 9px;
+    width: 100px;
+}
+.sidebar ul:hover{
+    background-image: url("img/background31.jpeg");
+    text-shadow: white 2px 5px 2px;
+    background-size: cover;
+    color: black;
+}
+.pdf{
+    height: 75px;
+    width: 75px;
+}
+.pdf:hover{
+    opacity: .7;
+}
+/* ===============universal styles========= */
+h1{
+    font-family: 'Lobster Two', cursive;
+    font: 600 bolder;
+    color: white;
+    font-size: 4em;
+    text-shadow: black 2px 5px 2px;
+}
+h2{
+    font-family: 'Lobster Two', cursive;
+    font: 600 bold;
+    color: rgb(236, 162, 65);
+    font-size: 2.5em;
+    text-shadow: white 2px 2px 2px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    color: white;
+    width: 100vw;
+}
+.sec{
+    width: 80vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    box-sizing: content-box;
+    border-radius: 50px 0 0  50px ;
+    text-overflow: ellipsis;
+    transform-origin: 0 0 0;
+    padding: 50px;
+    min-height: 60vh;
+    position: relative;
+}
+p{
+    font-size: 1.5em;
+    color: white;
+}
+ul{
+    padding: 2px 50px;
+    text-align: left;
+}
+
+/* ================welcome screen========= */
+.welcome{
+    background-image: url("img/background31.jpeg");
+    height: 85vh;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.welcome h1{
+    color: black;
+    font-size: 5em;
+    text-shadow: white 2px 5px 15px;
+}
+.welcome span{
+    color: black;
+    text-shadow: white 2px 5px 15px;
+    font-size: 2em;
+    font-family: 'Oleo Script', cursive;
+}
+.welcome p{
+    font-family: 'Oswald', sans-serif;
+    margin: 10%;
+}
+
+/* ===============languages learned============== */
+.skills{
+    display: block;
+    margin: 0 auto;
+}
+.skills img{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    justify-content: space-around;
+    padding: 5px 10px;
+}
+.tbrow{
+    display:  flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+}
+.sklst{
+    display: flex;
+    flex-direction: column;
+}
+.sklst p{
+    margin: 0;
+    text-align: center;
+}
+
+/* ================previous work=================== */
+.project{
+    background-image: url("img/background25.jpg");
+    background-size: 100% 100%;
+}
+.portimg {
+    height: 275px;
+    width: 350px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.static:after{
+    background-image: url('img/portoverlay.gif');
+    height: 165px;
+    width: 300px;
+    margin-left: -155px;
+    margin-top: 13px;
+    box-shadow: 5px 5px 15px black;
+    position: absolute;
+    content: '';
+    opacity: .8;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.resume1{
+    background: url('img/resume1.png');
+    background-size: 100% 100%;
+}
+.calc{
+    background: url('img/calc.png');
+    background-size: 100% 100%;
+}
+.blk{
+    background: url('img/blklightning.png');
+    background-size: 100% 100%;
+}
+.wayne{
+    background: url('img/wayne.png');
+    background-size: 100% 100%;
+}
+.alarm{
+    background: url('img/alarm.png');
+    background-size: 100% 100%;
+}
+.final{
+    background: url('img/final.png');
+    background-size: 100% 100%;
+}
+.connect{
+    background: url('img/connect4.png');
+    background-size: 100% 100%;
+}
+.homeone{
+    background: url('img/homeone.png');
+    background-size: 100% 100%;
+}
+.calc2{
+    background: url('img/calc2.png');
+    background-size: 100% 100%;
+}
+.alarm2{
+    background: url('img/clock.png');
+    background-size: 100% 100%;
+}
+.secret{
+    background: url('img/secret.png');
+    background-size: 100% 100%;
+}
+.viva{
+    background: url('img/viva.png');
+    background-size: 100% 100%;
+}
+.project img:hover{
+    opacity: .6;
+}
+
+/* ===============contact me============= */
+.contact{
+    background-image: url("img/background28.jpg");
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3em;
+}
+.num{
+    display: flex;
+    justify-content: space-evenly;
+}
+.one{
+    text-align: right;
+    align-content: center;
+    margin: 0 auto;
+    align-items: center;
+    align-self: center;
+}
+.one img{
+    height: 40px;
+    width: 40px;
+    line-height: 50px;
+}
+.two img{
+    height: 60px;
+    width: 250px;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    margin: 20px 0px;
+    border-radius: 15px;
+}
+.two img:hover{
+    opacity: .8;
+}
+.three img{
+    height: 80px;
+    width: 80px;
+}
+.three img:hover{
+    opacity: .8;
+}
+
+@media (max-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+    }
+    .sec{
+        width: 90vw;
+    }
+    .profile p{
+        padding: 5px 50px 5px 50px;
+    }
+    .column2{
+        margin-left: 5px;
+    }
+    .num{
+        display: flex;
+        flex-direction: column;
+    }
+    .one, .two, .three{
+        padding: 10px 0;
+    }
+    .two{
+        display: flex;
+        flex-direction: column;
+    }
+    .two img{
+        border-radius: 15px;
+        /* border: solid white; */
+    }
+    .menubar, .sticky{
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        height: 80px;
+        width: 100%;
+        margin-top: 0;
+        top: 0;
+        z-index: 999;
+        background: black;
+        text-align: center;
+        /* border: solid hotpink; */
+    }
+    .menu{
+        margin-left: 0;
+        margin-top: 0;
+        width: 90vw;
+        top: 0;
+    }
+    .sticky{
+        flex-direction: column;
+        position: sticky;
+        top: 0;
+    }
+    .me {
+        height: 70px;
+        width: 60px;
+        
+        /* border: solid lime; */
+    }
+    .sidebar h2{
+        padding:0 100px;
+    }
+    .sidebar ul{
+        display: none;
+    }
+    .pdf{
+        display: none;
+    }
+    .row{
+        margin: 0;
+    }
+    .icon{
+        display: flex;
+        flex-direction: column;
+        height: 60px;
+        width: 60px;
+        /* border: solid red; */
+        justify-content: center;
+        align-items: center;
+        
+    }
+    /* .icon.rotate{
+        transform: rotate(90deg)
+    } */
+    .line1.rotate{
+        transform: rotate(45deg) translate(1px, 4px);
+    }
+    .line2.rotate{
+        display: none;
+    }
+    .line3.rotate{
+        transform: rotate(-45deg) translate(8px, -8px);
+    }
+    .line1, .line2, .line3{
+        height: 8px;
+        width: 50px;
+        background-color: white;
+        margin: 4px;
+        border-radius: 10px;
+        transition: all .2s linear;
+    }
+    .menubar{
+        top: 0;
+    }
+    .menuoptions{
+        display: none;
+        top: 80px;
+        margin-left: -80px;
+        width: 100vw;
+    }
+    #mininav ul{
+        display: flex;
+        flex-direction: column;
+        /* border: solid purple; */
+        width: 100vw;
+        height: 30px;
+        color: aliceblue;
+        background: black;
+        margin: 0;
+        padding: 9px;
+        border: none;
+        border-radius: 0;
+        text-shadow: none;
+    }
+    #mininav ul:hover{
+    background-image: radial-gradient( rgb(87, 87, 87),silver);
+    color: black;
+    border-radius: 0;
+    }
+    
+}

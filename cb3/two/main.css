@@ -1,0 +1,302 @@
+@font-face {
+    font-family: secret;
+    src: url('img/secretfont.ttf');
+  }
+  @import url('https://fonts.googleapis.com/css?family=Concert+One');
+  body {
+    background-image: url('img/back1.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: 100% 100%;
+}
+/*==========================landing page======================= */
+.landing{
+    background-image: url('img/landing.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    height: 102vh;
+    width: 102vw;
+}
+.landing button{
+    height: 100px;
+    width: 200px;
+    font-size: 5em;
+    background-image: radial-gradient(#8b171a , #af1219, #c90408, black);
+    color: white;
+    font-family: secret;
+    border: none;
+    border-radius: 150px;
+    margin-top: 50px;
+}
+.landing button:focus{
+    outline: 0;
+}
+.zoom2 {
+    animation-name: zoom2;
+    animation-duration: 8s;
+    }
+    @keyframes zoom2 {
+    0% {
+    transform: scale3d(.3, .3, .3);
+    }
+    50% {
+    opacity: 1;
+    }
+} 
+/* =========================general pages========================= */
+
+h1{
+    text-align: center;
+    font-family: secret;
+    font-size: 4em;
+    color: #6d0000;
+    text-shadow: white 2px 5px 2px;
+    margin-top: 30px;
+    font-weight: bolder;
+    padding-top: 15px;
+}
+h2{
+    text-align: center;
+    font-family: secret;
+    font-size: 3em;
+    color: black;
+    text-shadow: white 2px 5px 2px;
+    margin-top: 30px;
+    font-weight: bolder;
+    padding-top: 15px;
+}
+p{
+    margin: 5px 20%;
+    /* margin-bottom: 20%; */
+    font-family: 'Concert One', cursive;
+    font-size: 1.5em;
+    color: #6d0000;
+    text-shadow: white 1px 1px 5px;
+    font-weight: bold;
+}
+
+nav{
+height: 20%;
+/* border: solid; */
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-right: 8%;
+flex-wrap: nowrap;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.7em;
+    font-family: 'Concert One', cursive;
+    text-shadow: #6d0000 2px 2px 5px;
+    flex-wrap: nowrap
+}
+
+#midlogo{
+    width: 350px;
+    box-shadow: none;
+    height: 290px;
+    margin-bottom: 40px;
+}
+
+nav img{
+    height: 100px;
+    width: 100px;
+
+}
+
+.sidebar{
+    transition: all .5s linear;
+  }
+  
+.sidebar.rotate{
+    transform: rotate(-90deg);
+  }
+  
+#sidemenu{
+  font-size: 2em;
+  height: 100%; 
+  width: 250px;
+  position: fixed;
+  z-index: .9;
+  top: 100px;
+  left: 15px; 
+  background: inherit;
+  font-family: 'Concert One', cursive;
+  padding-top: 60px;
+  display: none;
+  }
+  
+#sidemenu a {
+    position: relative;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: .8em;
+    font-weight: bold;
+    color: #6d0000;
+    display: block;
+    transition: all 0.3s;
+    text-shadow: white 4px 2px 3px;
+    padding: 15px;
+  }
+
+.footer{
+    height: 40%;
+    background-color: inherit;
+    margin-top: 300px;
+    font-family: 'Concert One', cursive;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: black 2px 2px 5px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.footer h1{
+      color: white;
+      text-shadow: black 2px 5px 5px;
+}
+.pic{
+    text-align: center;
+}
+.footer input{
+    height: 40px;
+    width: 400px;
+    font-size: 1em;
+    font-family: 'Concert One', cursive;
+}
+.footer button{
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    font-size: 1em;
+    font-family: 'Concert One', cursive;
+}
+  #footer img{
+    height: 50px;
+    width: 50px;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 30px;
+}
+.pic a:hover{
+    opacity: .7;
+}
+/* ====================footer media query=============== */
+.con{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:768px){
+    .con{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+  /* =========================about author========================= */
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  .about img{
+      height: 300px;
+      width: 200px;
+      border-radius: 15px 30px;
+      align-self: center;
+      box-shadow: white 5px 2px 5px;
+  }
+
+  #aboutp{
+      font-size: 1.9em;
+      text-shadow: white 1px 1px 5px;
+  }
+  #rhonda{
+    height: 55%;
+    width: 55%;
+    border-radius: 15px 30px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: white 5px 2px 5px;
+  }
+  .history, .bio{
+      display: flex;
+      flex-direction: column;
+  }
+
+  /* =========================about book========================= */
+  #book{
+      box-shadow: none;
+      height: 10%;
+      width: 25%
+  }
+
+  #coolfacts img{
+        transition: all .5s linear;
+        height: 100px;
+        width: 100px;
+        box-shadow: none;
+  }
+    #coolfacts:hover{
+        transform: rotate(-90deg);
+        color: #00aa23 #00a683 #11a683 #052183
+      }
+
+ul{
+    font-family: 'Concert One', cursive;
+    font-size: 1.5em;
+    color: #6d0000;
+    text-shadow: white 1px 1px 5px;
+    font-weight: bold;
+}
+li{
+    font-family: 'Concert One', cursive;
+    font-size: .8em;
+    color: black;
+    text-shadow: white 1px 1px 5px;
+}
+
+.full{
+    display: flex;
+    margin: 0 20%;
+    justify-content: center;
+}
+
+/* ============================= */
+.slideshow img{
+    height: 400px;
+    width: 300px;
+    box-shadow: none;
+    justify-content: center;
+    text-align: center;
+    width:300px; /* 300 x 4 */
+    position:relative;
+    animation:slide 10s ease-in-out infinite;
+}
+
+@keyframes slide {
+    0% {left:250px}
+    25% {left:0px}
+    50% {left:0px}
+    75% {left:-250px}
+    100% {left:250px}
+}
+.slimages{
+    display: flex;
+
+}
+iframe{
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+}
